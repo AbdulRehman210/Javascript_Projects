@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Counter</title>
+  </head>
+
+  <body>
+    <h1>Digit Counter</h1>
+
+    <div class="counter">
+      <h2 id="count">0</h2>
+
+      <div>
+        <button type="button" class="btn" onclick="changeCount(-1)">
+          Decrease
+        </button>
+        <button type="button" class="btn" onclick="changeCount(1)">
+          Increase
+        </button>
+        <br />
+        <button class="btn" onclick="reSet()">Reset</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
