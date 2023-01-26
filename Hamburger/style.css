@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(52, 63, 165);
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  border: 2px solid wheat;
+}
+
+.container {
+  float: right;
+  height: 25px;
+  width: 40px;
+  position: fixed;
+  top: 30px;
+
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  color: aliceblue;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.menuLogo {
+  height: 3px;
+  width: 30px;
+  background-color: snow;
+}
+
+.menu {
+  margin-top: 10px;
+
+  background-color: rgb(68, 93, 206);
+  width: 50%;
+  height: 100vh;
+  padding: 50px;
+  transform: translateX(-500px);
+  transition: 0.5s;
+}
+
+.menu li {
+  list-style-type: none;
+  border-bottom: 1px solid rgb(198, 215, 226);
+  padding: 30px 0;
+}
+
+.showmenu {
+  transform: translateX(0);
+}
+
+.menu li a :last-child {
+  border-bottom: none;
+}
+
+.menu li a :first-child {
+  font-weight: bold;
+}
+
+.menu li a {
+  color: snow;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  transition: font-weight 0.2s;
+}
+
+.menu lia a :hover {
+  font-weight: bold;
+}
+
+.denu {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  .wrapper {
+    display: flex;
+  }
+
+  .container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu li a {
+    font-size: 16px;
+  }
+}
