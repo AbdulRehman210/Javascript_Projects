@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #415596;
+    color: aliceblue;
+}
+
+.counter{
+    text-align: center;
+
+    width: 50%;
+    height: 500px;
+    border: 10px solid goldenrod ;
+    border-radius: 40px;
+
+
+}
+h1{
+    font-size: 70px;
+    margin:20px 0px 20px 0px;
+}
+
+h2{
+    font-size: 150px;
+    margin:20px 0px 20px 0px;
+
+}
+
+.btn{
+    
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: medium;
+    width: 90px;
+    height: 50px;
+    color:black;
+    background-color: orange;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
