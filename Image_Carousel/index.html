@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Carousel</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image fade">
+        <img src="./images/Naruto4.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="image fade">
+        <img src="./images/Naruto2.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="image fade">
+        <img src="./images/Naruto3.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="image fade">
+        <img src="./images/Naruto1.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="image fade">
+        <img src="./images/Naruto5.jpg" alt="" width="100%" />
+      </div>
+
+      <div class="arrows">
+        <i
+          id="prev"
+          onclick="showImage(-1)"
+          class="fa-solid fa-angles-left"
+        ></i>
+        &nbsp; &nbsp;
+        <i
+          id="next"
+          onclick="showImage(1)"
+          class="fa-solid fa-angles-right"
+        ></i>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
